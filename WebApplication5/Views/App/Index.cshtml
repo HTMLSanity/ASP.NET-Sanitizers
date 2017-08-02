@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<head>
+    <script type="text/javascript">
+        function CheckColors(val) {
+            var element = document.getElementById('List');
+            if (val == 'List')
+                element.style.display = 'block';
+            else
+                element.style.display = 'none';
+        }
+
+    </script>
+</head>
+
+<div class="jumbotron">
+    <h1>ASP.NET</h1>
+    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+
+<h2></h2>
+<br />
+<br />
+
+
+
+<form action="/App/Form" method="post" id="former">
+
+    <textarea rows="4" cols="70" name="Unsanitized_HTML" id="Unsanitized_HTML" >
+Enter unsanitized HTML here...</textarea>
+    <br />
+    <textarea rows="4" cols="70" name="Tags" id="Tags" >
+Enter tags to filter/retain here...</textarea>
+    <br>
+
+      <br />    <input type="submit" value="Submit input" /> 
+</form>
+<br>
+<br />
